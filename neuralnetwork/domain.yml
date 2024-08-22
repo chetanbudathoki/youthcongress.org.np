@@ -1,0 +1,25 @@
+version: "3.0"
+intents:
+  - greet
+  - ask_about_organization
+  - ask_organization_name
+  - goodbye
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_about_organization:
+    - text: "Youth Congress Nepal is a youth-led organization that focuses on empowering the youth in Nepal through various initiatives and programs."
+
+  utter_organization_name:
+    - text: "The name of the organization is Youth Congress Nepal."
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+
+actions:
+  - utter_greet
+  - utter_about_organization
+  - utter_organization_name
+  - utter_goodbye
