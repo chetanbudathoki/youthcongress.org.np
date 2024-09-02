@@ -1,0 +1,8 @@
+{
+    "editor.fontFamily": "'Fira Code'",
+    "material-icon-theme.folders.associations": {
+        "neuralnetwork": "Core",
+        "actions": "bicep",
+        ".rasa": "app"
+      }
+}

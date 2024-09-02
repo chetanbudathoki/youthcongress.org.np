@@ -1,31 +1,4 @@
-version: "3.0"
+version: "3.1"
+
 nlu:
-  - intent: greet
-    examples: |
-      - Hi
-      - Hello
-      - Hey
-      - Hi there
-      - Good morning
 
-  - intent: ask_about_organization
-    examples: |
-      - Can you tell me about the organization?
-      - What is Youth Congress Nepal?
-      - Tell me about Youth Congress Nepal.
-      - I want to know about Youth Congress Nepal.
-      - Please give me some information about Youth Congress Nepal.
-
-  - intent: ask_organization_name
-    examples: |
-      - What is the name of the organization?
-      - What is this organization's name?
-      - What is your organization called?
-      - What is the organization's name?
-
-  - intent: goodbye
-    examples: |
-      - Goodbye
-      - Bye
-      - See you later
-      - Take care
