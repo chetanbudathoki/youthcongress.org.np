@@ -1,18 +1,23 @@
+
 {
-    "name": "youthcongress.org.np",
-    "image": "rasa/rasa:latest",
+	"name": "youthcongress.org.np",	
+	"image": "rasa/rasa:latest",
+	"remoteUser": "root",
 
-    "postCreateCommand": "apt-get update",
+	"postCreateCommand": "./.devcontainer/setup.sh",
 
-    "remoteUser": "root",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-python.python",
-                "ms-python.vscode-pylance",
-                "ms-python.debugpy"
-            ]
-        }
-    }
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"GitHub.remotehub",
+				"ms-vscode-remote.remote-containers"
+			]
+		}
+	},
+
+	"mounts": [
+        "source=${localEnv:HOME}/.gitconfig,target=/root/.gitconfig,type=bind",
+        "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind"
+    ]
 }
-   
