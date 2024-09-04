@@ -1,7 +1,12 @@
 version: "3.1"
 
 intents:
+  - greet
+  - answer_introduction
 
 responses:
-
-  carry_over_slots_to_new_session: true
+  utter_greet:
+    - text: "Hello, how may I assist you today?"
+  
+  utter_ask_introduction:
+    - text: "Can you introduce yourself?"
