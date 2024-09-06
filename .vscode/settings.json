@@ -4,5 +4,6 @@
         "neuralnetwork": "Core",
         "actions": "bicep",
         ".rasa": "app"
-      }
+      },
+    "terminal.integrated.fontFamily": "'Fira Code'",
 }

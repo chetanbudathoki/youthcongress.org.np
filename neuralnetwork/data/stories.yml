@@ -1,9 +1,8 @@
 version: "3.1"
 
 stories:
-  -story: primary_conversation
+  -story: greet
   steps: 
     -intent: greet
     -action: utter_greet
-    -intent: ask_introduction
-    -action: utter_introduction
+ 

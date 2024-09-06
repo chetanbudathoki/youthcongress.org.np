@@ -13,7 +13,7 @@ then
 fi
 
 # Set shorter terminal prompt to just display the directory name
-echo "export PS1='youthcongress.org.np: '" >> ~/.bashrc
+echo "export PS1='\w: '" >> ~/.bashrc
 
 # Source the updated .bashrc to apply the changes immediately
 source ~/.bashrc
