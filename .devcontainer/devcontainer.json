@@ -15,7 +15,8 @@
 				"redhat.vscode-yaml",
 				"ms-python.vscode-pylance",
 				"ms-python.debugpy",
-				"eamodio.gitlens"
+				"eamodio.gitlens",
+				"PKief.material-product-icons"
 			]
 		}
 	},
