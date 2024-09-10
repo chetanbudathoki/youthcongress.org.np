@@ -4,6 +4,8 @@ set -e
 apt-get update
 # apt install golang-go
 
+pip install rasa-sdk-plugins
+
 # Install Git if not already installed
 if ! command -v git &> /dev/null
 then

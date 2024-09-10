@@ -3,55 +3,25 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - Hello
+    - Hi
+    - Hey
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+- intent: inquiry
+  examples: | 
+    - I want to know more about the organization
+    - What is Youth Congress Nepal?
+    - Tell me about Youth Congress?
 
-- intent: affirm
+- intent: phone_number
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+   - my mobile number is [9851152925] (phone_number)
+   - its [9851152925] (phone_number)
+   - my number is [9851152925] (phone_number)
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
 
-- intent: bot_challenge
+- intent: verify_phone_number
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - can you display my number?
+    - I want to verify my number, can you display it?
+    - what is my mobile number?
