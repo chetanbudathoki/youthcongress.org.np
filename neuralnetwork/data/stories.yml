@@ -1,16 +1,11 @@
 version: "3.1"
 
 stories:
-- story: greet
-  steps:
-    - intent: greet
-    - action: utter_greet
-    - intent: inquiry
-    - action: utter_inquiry
-    - action: utter_ask_phone_number
-    - intent: phone_number
-      entities:
-      - number: 9851152925
-    - slot_was_set: 
-      - phone_number: 9851152925
-    - action: action_say_phone_number 
+  - story: greet and ask name
+    steps:
+      - intent: greet
+      - action: utter_ask_name
+      - intent: provide_name
+        entities:
+          - name_of_user: "Chetan Budathoki"
+      - action: utter_greet_with_name

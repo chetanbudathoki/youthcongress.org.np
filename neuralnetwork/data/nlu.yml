@@ -8,20 +8,39 @@ nlu:
     - Hey
 
 - intent: inquiry
-  examples: | 
+  examples: |
     - I want to know more about the organization
     - What is Youth Congress Nepal?
     - Tell me about Youth Congress?
 
-- intent: phone_number
+- intent: get_registered
   examples: |
-   - my mobile number is [9851152925] (phone_number)
-   - its [9851152925] (phone_number)
-   - my number is [9851152925] (phone_number)
+    - I want to join the organization.
+    - I want to be a part of Youth Congress Nepal.
+    - How can I join the team?
 
-
-- intent: verify_phone_number
+- intent: provide_name
   examples: |
-    - can you display my number?
-    - I want to verify my number, can you display it?
-    - what is my mobile number?
+    - I am [Chetan Budathoki](name_of_user)
+    - It's [Chetan Budathoki](name_of_user)
+    - My name is [Chetan Budathoki](name_of_user)
+
+- intent: provide_temporary_location
+  examples: | 
+    - I am currently living on [Kathmandu] (temporary_location)
+    - I am staying on [Pokhara] (temporary_location)
+
+- intent: provide_permanent_location
+  examples: |
+    - I am from [Morang] (permanent_location)
+    - My house is in [Jhapa] (permanent_location)
+
+- intent: provide_mobile_number
+  examples: |
+    - My mobile number is [9851152925] (mobile_number)
+    - its [9851152925] (mobile_number)
+  
+- intent: provide_email_id
+  examples: |
+    - my email ID is [chetanbudathoki@outlook.com] (email_id)
+    - its [chetanbudathoki@gmail.com] (email_id)

@@ -27,6 +27,5 @@ pipeline:
   epochs: 100
   constrain_similarities: true
 
-- name: FallbackClassifier
 
 assistant_id: 20240909-125157-youthcongress-nepal

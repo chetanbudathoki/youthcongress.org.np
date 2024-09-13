@@ -3,28 +3,27 @@ version: "3.1"
 intents:
   - greet
   - inquiry
-  - phone_number
-  - verify_phone_number
+  - provide_name
 
 entities:
-  - phone_number
-
-actions:
-- action_say_phone_number
+  - name_of_user
 
 slots:
-  phone_number:
+  name_of_user:
     type: text
     mappings:
       - type: from_entity
-        entity: phone_number
+        entity: name_of_user
 
 responses:
   utter_greet:
-  - text: "Hello, how can I assist you?"
+    - text: "Hello, how can I assist you?"
 
   utter_inquiry:
-  - text: "Youth Congress Nepal is youth based organization."
+    - text: "Youth Congress Nepal is a youth-based organization."
 
-  utter_ask_phone_number:
-  - text: Can I get your phone number?
+  utter_ask_name:
+    - text: "Can I get your name?"
+
+  utter_greet_with_name:
+    - text: "Pleasure meeting you {name_of_user}."
